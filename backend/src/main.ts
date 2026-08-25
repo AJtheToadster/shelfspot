@@ -24,9 +24,12 @@ async function bootstrap() {
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:3002",
-      "http://frontend:3000", // Docker internal communication
-      process.env.FRONTEND_URL || "http://localhost:3000",
-    ],
+      "http://localhost:8082",
+      "http://localhost:8083",
+      "http://frontend:3000",
+      "http://frontend:8083",
+      process.env.FRONTEND_URL,
+    ].filter(Boolean) as string[],
     credentials: true,
   });
 
