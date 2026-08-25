@@ -1,4 +1,4 @@
-const CACHE_NAME = 'shelfspot-v1';
+const CACHE_NAME = 'shelfspot-v2';
 const OFFLINE_URL = '/offline';
 
 const PRECACHE_ASSETS = [

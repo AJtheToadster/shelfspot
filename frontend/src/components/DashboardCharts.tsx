@@ -125,7 +125,7 @@ export default function DashboardCharts({ preferences }: DashboardChartsProps) {
         labels: ["Jan", "Feb", "Mar", "Apr", "May"],
         datasets: [
             {
-                label: "Value (€)",
+                label: "Value ($)",
                 data: [currentValue, currentValue, currentValue, currentValue, currentValue],
                 fill: true,
                 backgroundColor: "#3b82f6",
@@ -318,7 +318,7 @@ export default function DashboardCharts({ preferences }: DashboardChartsProps) {
                         <>
                             <div className="mb-4 text-center">
                                 <div className="text-3xl font-bold text-green-600 dark:text-green-400">
-                                    €{inventoryValueData.totalValue.toLocaleString()}
+                                    ${inventoryValueData.totalValue.toLocaleString()}
                                 </div>
                                 <div className="text-sm text-muted-foreground">
                                     Based on {inventoryValueData.itemsWithValue} items with selling prices

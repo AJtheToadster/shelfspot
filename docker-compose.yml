@@ -40,15 +40,12 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-      args:
-        NEXT_PUBLIC_BACKEND_URL: ${NEXT_PUBLIC_BACKEND_URL:-http://localhost:8082}
     container_name: shelfspot_frontend
     profiles: ["frontend", "full"]
     ports:
       - "${FRONTEND_PORT:-8083}:8083"
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL:-http://localhost:8082}
     restart: unless-stopped
 
   studio:

@@ -3,7 +3,7 @@
 // API service to communicate with the NestJS backend
 
 const BACKEND_URL =
-  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8082";
+  process.env.NEXT_PUBLIC_BACKEND_URL || "/api";
 
 interface ApiResponse<T = any> {
   success: boolean;
