@@ -541,22 +541,22 @@ function ItemsTable({ search, items: itemsProp, columns = [
                                 </button>
                             </TableHead>
                             {columns.includes("name") && (
-                                <TableHead>Nom</TableHead>
+                                <TableHead>Name</TableHead>
                             )}
                             {columns.includes("quantity") && (
-                                <TableHead>Quantité</TableHead>
+                                <TableHead>Quantity</TableHead>
                             )}
                             {columns.includes("status") && (
-                                <TableHead>Statut</TableHead>
+                                <TableHead>Status</TableHead>
                             )}
                             {columns.includes("room") && (
-                                <TableHead>Pièce</TableHead>
+                                <TableHead>Room</TableHead>
                             )}
                             {columns.includes("place") && (
-                                <TableHead>Emplacement</TableHead>
+                                <TableHead>Place</TableHead>
                             )}
                             {columns.includes("container") && (
-                                <TableHead>Contenant</TableHead>
+                                <TableHead>Container</TableHead>
                             )}
                             {columns.includes("tags") && (
                                 <TableHead>Tags</TableHead>
